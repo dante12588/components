@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+}
+
+* {
+  color: antiquewhite;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion {
+  background-color: #525252;
+}
+
+.accordion__element {
+  border: 2px solid grey;
+  padding: 20px;
+}
+
+.accordion__element.active .accordion__conntent {
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.accordion__conntent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0fr;
+      grid-template-rows: 0fr;
+  -webkit-transition: grid-template-rows 500ms;
+  transition: grid-template-rows 500ms;
+  transition: grid-template-rows 500ms, -ms-grid-rows 500ms;
+}
+
+.accordion__wrapper {
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
